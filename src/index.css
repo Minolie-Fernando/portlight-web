@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: hidden;
+  margin-top: -34px;
+}
+
+/* .feed-wrapper {
+  margin: 52px;
+} */
+.pro-header{
+  display: flex;
+  flex-direction: column;
+  max-height: 87px;
+  width: 100%;
+  /* background-color: #fff; */
+  /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1); */
+  /* border-bottom: 1px solid !important; */
+  padding: 0.75em 0em;
+  /* position: sticky; */
+  top: 0px;
+  z-index: 10;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: black;
+  /*Opacity start*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  /*Opacity end*/
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  /* height: 150px; */
+  /* padding: 0s; */
+  margin: 0;
+}
+ 
+.body-background {  
+  /* background-image: url("../src/components/Shared/utils/images/background-2.jpeg"); */
+  /* width: 100%; */
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  margin-top: -134px;
+  top:0px; /* set top and left 0 */
+  left:0px;
+}
+
+.body-background-img {
+    /* background-image: url("../src/components/Shared/utils/images/background-2.jpeg"); */
+    background-color: black;
+
+}
+
+.ant-carousel { 
+  width: 50em;
+}
+.slider-item-div {
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.ant-carousel .slick-dots li.slick-active button,
+/* .ant-carousel .slick-dots li.slick-active,
+.ant-carousel .slick-dots li button {
+  margin-top: 191px;
+  height: 5px;
+  width: 30px;
+  background: grey !important;
+  z-index: 9999;
+} */
+
+.pro-wrapper {
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.reader {
+  overflow: hidden;
+  margin-top: 21em;
+  z-index: 9999;
+}
+
+.margin-support {
+  margin-left: -29px;
+  padding: 8em;
+}
+.pro-btn-a {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  border-radius: 6px !important;
+  padding: 11px !important;
+  margin-left: 7px!important;
+  color: black !important;
+  font-weight: 600 !important;
+  height: 43px !important;
+  margin: 10px !important;
+}
+
+.pro-btn-b {
+  background-color: #000080 !important;
+  border-color: #000080 !important;
+  border-radius: 10px !important;
+  padding: 11px !important;
+  margin-left: 7px!important;
+  color: whitesmoke !important;
+  font-weight: 600 !important;
+  height: 43px !important;
+  margin: 10px !important;
+}
+
+.logo {
+  margin-right: 1em;
+}
+
+.inner {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.container {
+  width: 75%;
+  height: 166px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 40px;
+  margin: 37px;
+  margin-top: -4px;
+}
+.item {
+  /* padding: 10px; */
+  /* width: 201px; */
+  flex-shrink: 0;
+  height: 100px;
+  display: block;
+  position: relative;
+  transition: transform 500ms;
+  /* z-index: 10; */
+}
+
+.container .item:focus,
+.container .item:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+/* .container:focus-within .item,
+.container:hover .item {
+  transform: translateY(-25%);
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+  transform: translateY(25%);
+} */
+
+
+.slider-title {
+  padding: 5px;
+  margin-left: 58px;
+  font-size: 20px;
+}
+
+
+.item .tooltip-content {
+  display: none;
+  position: flex;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  /* width: 100%; */
+  padding: .5em;
+  /* z-index: 10; */
+  border-radius: 5px;
+}
+.item:hover .tooltip-content {
+  display: block;
+  background-color: azure;
+  bottom: 5%;
+  /* z-index: 999; */
+}
+
+/* Feed image */
+.feed-image-container {
+  position: absolute;
+  top: 33em;
+  left: -22em;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.feed-image-wrap {
+  position: relative;
+  -webkit-clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+  clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+}
+
+.feed-image-container:before,
+.feed-image-container:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 3em;
+  height: 3em;  
+}
+
+.feed-image-container:before {
+  /* background: url(https://www.kirupa.com/mini_icons/entypo/small_leaf.png) 0 0 no-repeat; */
+  top: 4em;
+  left: -0.2em;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.container:after {
+  /* background: url(http://heathersanimations.com/birds/PETBIRD1.gif) 0 0 no-repeat; */
+  top: 0;
+  right: -0.2em;
+}
